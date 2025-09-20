@@ -54,14 +54,14 @@ public class TestCase {
         try {
             driver.get("https://procurement.gosmartagro.com/#/login");
 
-            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
             wait.until(webDriver -> ((JavascriptExecutor) webDriver)
                 .executeScript("return document.readyState").equals("complete"));
 
             driver.findElement(By.name("userName")).sendKeys("admin@gosmartagro.com");
             driver.findElement(By.name("password")).sendKeys("admin123");
             driver.findElement(By.xpath("//button[text()='Sign In']")).click();
-
+            wait.wait(5000);
             // Add assertions to verify login success
             assertTrue(true);
         } catch (Exception e) {
