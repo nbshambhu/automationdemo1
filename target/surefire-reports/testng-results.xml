@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-09-20T20:17:54 IST" name="Suite" finished-at="2025-09-20T20:18:04 IST" duration-ms="10007">
+    <groups>
+    </groups>
+    <test started-at="2025-09-20T20:17:54 IST" name="ChromTest" finished-at="2025-09-20T20:18:01 IST" duration-ms="6594">
+      <class name="com.automationDemo.automationdemo1.TestCase">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.automationDemo.automationdemo1.TestCase@2a65fe7c]" started-at="2025-09-20T20:17:54 IST" name="setup" finished-at="2025-09-20T20:17:56 IST" duration-ms="2081" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest()[pri:0, instance:com.automationDemo.automationdemo1.TestCase@2a65fe7c]" started-at="2025-09-20T20:17:56 IST" name="loginTest" finished-at="2025-09-20T20:18:00 IST" duration-ms="4301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationDemo.automationdemo1.TestCase@2a65fe7c]" started-at="2025-09-20T20:18:00 IST" name="tearDown" finished-at="2025-09-20T20:18:01 IST" duration-ms="172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.automationDemo.automationdemo1.TestCase -->
+    </test> <!-- ChromTest -->
+    <test started-at="2025-09-20T20:18:01 IST" name="FirefoxTest" finished-at="2025-09-20T20:18:04 IST" duration-ms="3384">
+      <class name="com.automationDemo.automationdemo1.TestCase">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.automationDemo.automationdemo1.TestCase@477b4cdf]" started-at="2025-09-20T20:18:01 IST" name="setup" finished-at="2025-09-20T20:18:01 IST" duration-ms="860" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest()[pri:0, instance:com.automationDemo.automationdemo1.TestCase@477b4cdf]" started-at="2025-09-20T20:18:01 IST" name="loginTest" finished-at="2025-09-20T20:18:04 IST" duration-ms="2367" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationDemo.automationdemo1.TestCase@477b4cdf]" started-at="2025-09-20T20:18:04 IST" name="tearDown" finished-at="2025-09-20T20:18:04 IST" duration-ms="153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.automationDemo.automationdemo1.TestCase -->
+    </test> <!-- FirefoxTest -->
+  </suite> <!-- Suite -->
+</testng-results>

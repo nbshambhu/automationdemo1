@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="classes" name="ChromTest(failed)">
+    <parameter name="password" value="admin123"/>
+    <parameter name="userame" value="admin@gosmartagro.com"/>
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.automationDemo.automationdemo1.TestCase">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- com.automationDemo.automationdemo1.TestCase -->
+    </classes>
+  </test> <!-- ChromTest(failed) -->
+  <test thread-count="2" parallel="classes" name="FirefoxTest(failed)">
+    <parameter name="password" value="admin123"/>
+    <parameter name="browser" value="firefox"/>
+    <parameter name="username" value="admin@gosmartagro.com"/>
+    <classes>
+      <class name="com.automationDemo.automationdemo1.TestCase">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- com.automationDemo.automationdemo1.TestCase -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
