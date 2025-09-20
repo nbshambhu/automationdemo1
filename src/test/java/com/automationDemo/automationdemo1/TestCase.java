@@ -47,20 +47,22 @@ public class TestCase {
 		default:
 			throw new IllegalArgumentException("Unsupported Browser" + browerName);
 		}
-
+		System.out.println("Created a Driver instance for " + browerName);
 		return webDriver;
 	}
 
 	@Test
 	public Boolean launchBrowser(WebDriver webDriver) {
 		try {
-			webDriver.navigate().to("https://procurement.gosmartagro.com/#/login");
+			String url = "https://procurement.gosmartagro.com/#/login";
+			webDriver.get(url);;
 			Duration dr = Duration.ofSeconds(10);
 			WebDriverWait wt = new WebDriverWait(webDriver, dr);
 			wt.until(webdriver -> ((JavascriptExecutor) webdriver).executeScript("return document.readyState", null)
 					.equals("completed"));
 			webDriver.manage().timeouts().implicitlyWait(dr);
 			webDriver.manage().window().fullscreen();
+			System.out.println("Opened Browser and navigated to " + url);
 			return true;
 		} catch (Exception e) {
 			return false;
@@ -80,6 +82,7 @@ public class TestCase {
 			wl.sendKeys(password);
 			wl = webDriver.findElement(By.xpath("//button[text()=\"Sign In\"]"));
 			wl.click();
+			System.out.println("Login Successfull");
 			return true;
 		} catch (Exception e) {
 			return false;
