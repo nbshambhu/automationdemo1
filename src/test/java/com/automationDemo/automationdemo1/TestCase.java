@@ -15,6 +15,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
+import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
 
 public class TestCase {
@@ -66,7 +67,7 @@ public class TestCase {
             assertTrue(true);
         } catch (Exception e) {
             e.printStackTrace();
-            assertTrue(false);
+            assertFalse(false);
         }
     }
 
